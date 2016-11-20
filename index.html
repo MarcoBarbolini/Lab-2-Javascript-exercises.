@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title >Esercizio magazzino</title>
+        <meta name="description" content="Una guida interattiva per muovere i primi passi su Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <h1 align="center">ESERCIZIO MAGAZZINO CON JAVASCRIPT</h1>
+        Quantita massima magazzino <input type="number" id="inputMaxQta" value="30">
+        <br>
+        Contenuto magazzino:
+        <table width="100%" align="center">
+            <tr>
+                <td align="center">
+                    <table align="center" id="tabellaGiacenza">
+                        <tr>
+                            <th class="thGiacenza">Codice</th>
+                            <th class="thGiacenza">Descrizione</th>
+                            <th class="thGiacenza">Quantità</th>
+                        </tr>
+                    </table>
+                </td>
+                <td id="colonnaInserimento" align="center">
+                <table>
+                    <tr>
+                        <th colspan="3">Aggiungi articolo</th>
+                    </tr>
+                    <tr>
+                        <td id="cellaNuovoTesto">
+                        Codice:<br>
+                        Descrizione:<br>
+                        Quantità:<br>
+                        </td>
+                        <td id="cellaNuovoCampi">
+                        <input type="text" id="codiceNuovo"> <br>
+                        <input type="text" id="descrizioneNuovo"> <br>
+                        <input type="number" id="quantitaNuovo"> <br>
+                        </td>
+                        <td valign="bottom" id="cellaNuovoBottone">
+                            <button onclick="caricaElemento()">Carica</button>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                <label id="labelAvvisiCarichi"></label>
+            </tr>
+        </table>
+    </body>
+</html>
